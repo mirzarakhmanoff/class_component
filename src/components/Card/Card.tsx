@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import { Link } from "react-router-dom";
 
 interface Product {
@@ -16,7 +16,7 @@ interface ProductCardProps {
 export default class Card extends Component<ProductCardProps> {
   render() {
     const { data } = this.props;
-    const { images, title, description, price } = data;
+    const { title, description, price } = data;
 
     return (
       <div className="max-w-xs mx-auto bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 ease-in-out">
